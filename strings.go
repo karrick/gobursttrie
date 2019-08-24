@@ -2,18 +2,11 @@ package gobursttrie
 
 import (
 	"fmt"
-	"os"
 	"sort"
 	"strings"
 )
 
 // TODO: This entire library assumes ASCII text.
-
-func debug(format string, a ...interface{}) {
-	if true {
-		fmt.Fprintf(os.Stderr, format, a...)
-	}
-}
 
 // SortStrings returns a case-sensitive sorted list of strings.
 func SortStrings(list []string) []string {
